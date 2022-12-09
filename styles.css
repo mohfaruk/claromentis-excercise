@@ -1,0 +1,22 @@
+body {
+    background: url(./assets/background-FHD.jpg) no-repeat ;
+    background-size: cover;
+}
+
+.menu-bg {
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 800px;
+    width: 2000px;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 200px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+}
