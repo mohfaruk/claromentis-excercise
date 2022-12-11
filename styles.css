@@ -3,6 +3,15 @@ body {
     background-size: cover;
 }
 
+/* Utilities */
+
+.icons {
+    height: 30px;
+    width: 30px;
+}
+
+/* Menu */
+
 .menu-bg {
     margin: 100px auto;
     background-color: #fff;
@@ -11,12 +20,47 @@ body {
     width: 2000px;
 }
 
-.card-img-top {
-    height: 200px;
-    width: 200px;
-}
-
-.card-body {
+.menu-header, .card-body {
     display: flex;
     justify-content: space-between;
+}
+
+.header-title, .menu-icons {
+    padding: 1.3rem;
+} 
+
+.header-icons {
+    margin: 0 .5rem;
+}
+
+/* Cards */
+
+.badge-bg {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    /* top: 0;
+    left: 0; */
+}
+
+.badge-icon {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50px;
+}
+
+.card {
+    margin: 20px 10px;
+}
+
+.card-title {
+    margin-top: 10px;
+}
+
+/* Profile */
+
+.dropdown {
+    border: .2px solid grey;
+    width: 200px;
 }
