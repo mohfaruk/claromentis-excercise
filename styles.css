@@ -63,10 +63,14 @@ body {
     margin-top: 20px;
 }
 
-.drop-down-btn:hover {
-    background-color: #D3D3D3;
+.drop-down-btn, .drop-down-btn:hover {
+    background-color: #F0F0F0;
     border-radius: 50px;
     transition: .3s;
+}
+
+.drop-down-btn:hover {
+    background-color: #D3D3D3;
 }
 
 .dropdown-content {
@@ -81,7 +85,6 @@ body {
 
 .dropdown-content li {
     list-style: none;
-    background-color: #f6f6f6;
     transition: 0.5s;
 }
 
