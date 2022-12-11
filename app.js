@@ -1,17 +1,20 @@
+// initialises variable elemens
 const dropDownBtn = document.querySelectorAll(".drop-down-btn");
 const dropDownMenu = document.querySelector(".dropdown-content");
 
+// displays dropdown
 function showDropDown() {
   dropDownMenu.classList.toggle("show");
 }
 
+// runs showDropDown for each button on click
 for (const btn of dropDownBtn) {
   btn.addEventListener("click", e => {
-    btn.nextElementSibling.classList.toggle("show");
+    btn.nextElementSibling.classList.toggle("show"); // returns next element of button
   });
 }
 
-// Close the dropdown if the user clicks outside of it
+// closes dropdown when user clicks outside of it
 window.onclick = function (event) {
   if (!event.target.matches(".drop-down-btn")) {
     let dropdowns = document.getElementsByClassName("dropdown-content");

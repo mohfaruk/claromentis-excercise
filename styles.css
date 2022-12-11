@@ -5,18 +5,22 @@ body {
 
 /* Utilities */
 
-.icons {
-    height: 30px;
-    width: 30px;
-}
-
-/* Menu */
-
 .menu-container {
     margin: 100px auto;
     background-color: #fff;
     border-radius: 5px;
 }
+
+.icons {
+    height: 30px;
+    width: 30px;
+}
+
+.btn {
+    box-shadow: none !important
+}
+
+/* Header */
 
 .menu-header,
 .card-body {
@@ -33,42 +37,44 @@ body {
     margin: 0 .5rem;
 }
 
-/* .border-bottom {
-    border: 1px solid grey
-} */
-
 /* Cards */
 
 .badge-bg {
     position: relative;
     height: 200px;
     width: 200px;
-    /* top: 0;
-    left: 0; */
 }
 
 .badge-icon {
     position: absolute;
     height: 100px;
     width: 100px;
-    top: 50px;
+    top: 60px;
+    left: 0;
 }
 
 .card {
     margin: 20px 10px;
+    padding: 20px;
 }
 
-.card-title {
-    margin-top: 10px;
+.card-title,
+.border-bottom {
+    margin-top: 20px;
+}
+
+.drop-down-btn:hover {
+    background-color: #D3D3D3;
+    border-radius: 50px;
+    transition: .3s;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    text-align:center;
+    text-align: center;
     background-color: #fff;
     min-width: 140px;
-    /* overflow: auto; */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -95,7 +101,6 @@ body {
 .show {
     display: block;
 }
-
 
 /* Profile */
 
@@ -128,5 +133,36 @@ body {
 
 .dropdown {
     border: .2px solid grey;
-    width: 200px;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 990px) {
+
+    .menu-contents {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .profile-details,
+    .profile-dropdown,
+    .dropdown-toggle {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .profile-details {
+        display: block;
+    }
+
+    .profile-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .profile-details h5, .profile-details h6 {
+        font-size: 25px;
+    }
+
 }
