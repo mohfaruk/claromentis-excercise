@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="menu-bg">
+  <div class="menu-container col-lg-9">
     <!-- Menu Header -->
     <div class="menu-header">
       <h3 class="header-title">Badges</h3>
@@ -27,99 +27,139 @@
       </div>
     </div>
 
+    <div class="border-bottom"></div>
+
     <!-- Menu Badges -->
-      <div class="menu-badges row col-lg-9">
-        <div class="col-lg col-md-3">
-          <div class="card">
-            <img src="./assets/badge-bg/badge-1.svg" class="badge-bg card-img-top" alt="badge-bg" />
-            <img src="./assets/badge-icons/podium.svg" class="badge-icon card-img-top" alt="badge-icon" />
-            <!-- Could not find earned image -->
-            <div class="card-body">
-              <h5 class="card-title">Sales Superstar</h5>
-              <button type="button" class="drop-down-btn btn">
-                <img src="./assets/button-icons/three-dots-vertical.svg" class="icons" alt="three-dots" />
-              </button>
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="./assets/badge-bg/badge-1.svg" class="badge-bg card-img-top" alt="badge-bg" />
+              <img src="./assets/badge-icons/podium.svg" class="badge-icon card-img-top" alt="badge-icon" />
+              <div class="card-body">
+                <h5 class="card-title">Sales Superstar</h5>
+                <button type="button" class="drop-down-btn btn">
+                  <img src="./assets/button-icons/three-dots-vertical.svg" class="icons" alt="three-dots" />
+                  <div class="dropdown-content">
+                    <li><a href="#">Edit</a><li>
+                    <li><a href="#">Delete</a></li>
+                  </div>
+                </button>
+                
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg col-md-3">
-          <div class="card">
-            <img src="./assets/badge-bg/badge-2.svg" class="badge-bg card-img-top" alt="badge-bg" />
-            <img src="./assets/badge-icons/target.svg" class="badge-icon card-img-top" alt="badge-icon" />
-            <div class="card-body">
-              <h5 class="card-title">Customer Champion</h5>
-              <button type="button" class="btn">
-                <img src="./assets/button-icons/three-dots-vertical.svg" class="drop-down-btn icons" alt="three-dots" />
-              </button>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="./assets/badge-bg/badge-2.svg" class="badge-bg card-img-top" alt="badge-bg" />
+              <img src="./assets/badge-icons/target.svg" class="badge-icon card-img-top" alt="badge-icon" />
+              <div class="card-body">
+                <h5 class="card-title">Customer Champion</h5>
+                <button type="button" class="btn">
+                  <img src="./assets/button-icons/three-dots-vertical.svg" class="drop-down-btn icons"
+                    alt="three-dots" />
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg col-md-3">
-          <div class="card">
-            <img src="./assets/badge-bg/badge-3.svg" class="badge-bg card-img-top" alt="badge-bg" />
-            <img src="./assets/badge-icons/flag.svg" class="badge-icon card-img-top" alt="badge-icon" />
-            <div class="card-body">
-              <h5 class="card-title">Creative Thinker</h5>
-              <button type="button" class="btn">
-                <img src="./assets/button-icons/three-dots-vertical.svg" class="drop-down-btn icons" alt="three-dots" />
-                </svg>
-              </button>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="./assets/badge-bg/badge-3.svg" class="badge-bg card-img-top" alt="badge-bg" />
+              <img src="./assets/badge-icons/flag.svg" class="badge-icon card-img-top" alt="badge-icon" />
+              <div class="card-body">
+                <h5 class="card-title">Creative Thinker</h5>
+                <button type="button" class="btn">
+                  <img src="./assets/button-icons/three-dots-vertical.svg" class="drop-down-btn icons"
+                    alt="three-dots" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- <div class="menu-profile row col-lg-3">
-          <img src="./assets/profile.png" class="profile-img" alt="profile-img">
-          <h5>Colin Willard</h5>
-          <h6>UX ENgineer</h6>
-          <h5>Sort By</h5>
-        </div> -->
-      </div>
-
-      <div class="menu-badges row col-lg-6">
-        <div class="col-lg col-md-3">
-          <div class="card">
-            <img src="./assets/badge-bg/badge-4.svg" class="badge-bg card-img-top" alt="badge-bg" />
-            <img src="./assets/badge-icons/medal-1.svg" class="badge-icon card-img-top" alt="badge-icon" />
-            <div class="card-body">
-              <h5 class="card-title">Content Crafter</h5>
-              <button type="button" class="btn">
-                <img src="./assets/button-icons/three-dots-vertical.svg" class="drop-down-btn icons" alt="three-dots" />
-              </button>
+          <!-- <div class="col-lg-3 menu-profile">
+            <div class="profile-details">
+              <img src="./assets/profile.png" class="profile-img" alt="profile-img">
+              <div class="profile-text">
+                <h5>Colin Willard</h5>
+                <h6>UX Engineer</h6>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-lg col-md-3">
-          <div class="card">
-            <img src="./assets/badge-bg/badge-5.svg" class="badge-bg card-img-top" alt="badge-bg" />
-            <img src="./assets/badge-icons/medal-2.svg" class="badge-icon card-img-top" alt="badge-icon" />
-            <div class="card-body">
-              <h5 class="card-title">Tech Trailblazer</h5>
-              <button type="button" class="btn">
-                <img src="./assets/button-icons/three-dots-vertical.svg" class="drop-down-btn icons" alt="three-dots" />
-              </button>
+            <div class="profile-dropdown">
+              <h5>Sort By</h5>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Alphabetical: A-Z
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+              </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
-      <div class="menu-profile col-lg-3">
-        <img src="./assets/profile.png" class="profile-img" alt="profile-img">
-        <h5>Colin Willard</h5>
-        <h6>UX Engineer</h6>
-        <h5>Sort By</h5>
-        <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Alphabetical: A-Z
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <!-- <div class="col-lg-12"> -->
+        <div class="row">
+
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="./assets/badge-bg/badge-4.svg" class="badge-bg card-img-top" alt="badge-bg" />
+              <img src="./assets/badge-icons/medal-1.svg" class="badge-icon card-img-top" alt="badge-icon" />
+              <div class="card-body">
+                <h5 class="card-title">Content Crafter</h5>
+                <button type="button" class="btn">
+                  <img src="./assets/button-icons/three-dots-vertical.svg" class="drop-down-btn icons"
+                    alt="three-dots" />
+                </button>
+              </div>
+            </div>
           </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="./assets/badge-bg/badge-5.svg" class="badge-bg card-img-top" alt="badge-bg" />
+              <img src="./assets/badge-icons/medal-2.svg" class="badge-icon card-img-top" alt="badge-icon" />
+              <div class="card-body">
+                <h5 class="card-title">Content Crafter</h5>
+                <button type="button" class="btn">
+                  <img src="./assets/button-icons/three-dots-vertical.svg" class="drop-down-btn icons"
+                    alt="three-dots" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3"></div>
+
+          <div class="col-lg-3 menu-profile">
+            <div class="profile-details">
+              <img src="./assets/profile.png" class="profile-img" alt="profile-img">
+              <div class="profile-text">
+                <h5>Colin Willard</h5>
+                <h6>UX Engineer</h6>
+              </div>
+            </div>
+            <div class="profile-dropdown">
+              <h5>Sort By</h5>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Alphabetical: A-Z
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
-      
+    </div>
+    <!-- Profile -->
+
 
   </div>
 
