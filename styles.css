@@ -81,6 +81,7 @@ body {
 
 .dropdown-content li {
     list-style: none;
+    background-color: #f6f6f6;
     transition: 0.5s;
 }
 
