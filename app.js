@@ -5,25 +5,20 @@ function showDropDown() {
   dropDownMenu.classList.toggle("show");
 }
 
-function removeDropDown(event) {
-  if (!event.target.matches(dropDownBtn)) {
-    dropDownMenu.classList.remove("show");
-  }
-}
-
 for (const btn of dropDownBtn) {
-  btn.addEventListener("click", showDropDown);
+  btn.addEventListener("click", e => {
+    btn.nextElementSibling.classList.toggle("show");
+  });
 }
 
 // Close the dropdown if the user clicks outside of it
-document.addEventListener("click", removeDropDown);
-
-// window.onclick = function (event) {
-//   if (!event.target.matches(dropDownBtn)) {
-//     for (let i = 0; i < dropDownMenu.clientHeight; i++) {
-//       if (dropDownMenu[i].classList.contains("show")) {
-//         dropDownMenu[i].classList.remove("show");
-//       }
-//     }
-//   }
-// };
+window.onclick = function (event) {
+  if (!event.target.matches(".drop-down-btn")) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    for (let i = 0; i < dropdowns.length; i++) {
+      if (dropdowns[i].classList.contains("show")) {
+        dropdowns[i].classList.remove("show");
+      }
+    }
+  }
+};
